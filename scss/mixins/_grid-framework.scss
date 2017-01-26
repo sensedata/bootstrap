@@ -30,7 +30,7 @@
       }
       @for $i from 1 through $columns {
         .col-#{$breakpoint}-#{$i} {
-          @extend %grid-column-float-#{$breakpoint} !optional;
+          @extend %grid-column-float-#{$breakpoint};
           @include make-col-span($i, $columns);
         }
       }
